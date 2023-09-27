@@ -1,0 +1,84 @@
+# This project was generated with 0.3.15 using template: https://github.com/beeware/briefcase-template@v0.3.15
+[tool.briefcase]
+project_name = "Currency Convert"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/currencyconvert"
+license = "BSD license"
+author = "Artex"
+author_email = "anvsoc@gmail.com"
+
+[tool.briefcase.app.currencyconvert]
+formal_name = "Currency Convert"
+description = "Simplified currency converting at your fingertips."
+long_description = """More details about the app should go here.
+"""
+icon = "src/currencyconvert/resources/currencyconvert"
+sources = [
+    "src/currencyconvert",
+]
+test_sources = [
+    "tests",
+]
+
+requires = [
+]
+test_requires = [
+    "pytest",
+]
+
+[tool.briefcase.app.currencyconvert.macOS]
+requires = [
+    "std-nslog~=1.0.0"
+]
+
+[tool.briefcase.app.currencyconvert.linux]
+requires = [
+]
+
+[tool.briefcase.app.currencyconvert.linux.system.debian]
+system_requires = [
+]
+
+system_runtime_requires = [
+]
+
+[tool.briefcase.app.currencyconvert.linux.system.rhel]
+system_requires = [
+]
+
+system_runtime_requires = [
+]
+
+[tool.briefcase.app.currencyconvert.linux.system.arch]
+system_requires = [
+]
+
+system_runtime_requires = [
+]
+
+[tool.briefcase.app.currencyconvert.linux.appimage]
+manylinux = "manylinux2014"
+
+system_requires = [
+]
+linuxdeploy_plugins = []
+
+[tool.briefcase.app.currencyconvert.linux.flatpak]
+flatpak_runtime = "org.freedesktop.Platform"
+flatpak_runtime_version = "22.08"
+flatpak_sdk = "org.freedesktop.Sdk"
+
+[tool.briefcase.app.currencyconvert.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.currencyconvert.iOS]
+supported = false
+
+[tool.briefcase.app.currencyconvert.android]
+supported = false
+
+# Web deployments
+[tool.briefcase.app.currencyconvert.web]
+supported = false
